@@ -1,8 +1,14 @@
-import Vue from 'vue'
-import App from './App.vue'
 
+//引入Vue
+import Vue from 'vue'
+
+//引入App
+import App from './App'
 Vue.config.productionTip = false
 
+//创建Vue
+
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+    el:'#root',
+    render: h=>h(App)
+})
